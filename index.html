@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>personal-misc-page｜gigo's favorites</title>
+  <style>
+    :root {
+      --bg:#0b1020; --panel:#121a2f; --card:#16213d; --text:#e7ecff; --muted:#9fb0de;
+      --line:#2a3761; --accent:#6ea8fe; --active:#7cf2c6;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin:0; color:var(--text); background: radial-gradient(circle at 20% 0%, #1a2750 0%, var(--bg) 45%);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans TC", sans-serif;
+    }
+    .wrap { max-width: 1060px; margin: 0 auto; padding: 28px 18px 48px; }
+    h1 { margin: 0 0 6px; font-size: clamp(1.4rem, 2.8vw, 2.2rem); }
+    .muted { color: var(--muted); }
+
+    .tabs {
+      margin-top: 18px; display:flex; gap:10px; flex-wrap:wrap;
+      border-bottom:1px solid var(--line); padding-bottom:10px;
+    }
+    .tab-btn {
+      border:1px solid var(--line); background: var(--panel); color: var(--text);
+      padding:8px 14px; border-radius: 999px; cursor:pointer; font-weight:600;
+    }
+    .tab-btn.active { border-color: var(--active); box-shadow: inset 0 0 0 1px var(--active); }
+
+    .panel { display:none; margin-top: 18px; }
+    .panel.active { display:block; }
+
+    .grid {
+      display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px;
+    }
+    .card {
+      background: linear-gradient(180deg, #1a2648 0%, var(--card) 100%);
+      border:1px solid var(--line); border-radius:12px; padding:14px;
+    }
+    .card h3 { margin: 0 0 8px; font-size:1.04rem; }
+    .meta { font-size:.88rem; color: var(--muted); margin-bottom:8px; }
+    .card p { margin: 0 0 10px; line-height:1.5; font-size:.94rem; }
+    .card a { color: var(--accent); text-decoration: none; font-weight:600; }
+
+    .placeholder {
+      background: var(--panel); border:1px dashed var(--line); border-radius:12px; padding:16px;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <h1>personal-misc-page</h1>
+    <p class="muted">gigo 的個人喜好主題頁（Tab 分區）</p>
+
+    <nav class="tabs">
+      <button class="tab-btn active" data-tab="steam">Steam 新品</button>
+      <button class="tab-btn" data-tab="future-1">主題 2（預留）</button>
+      <button class="tab-btn" data-tab="future-2">主題 3（預留）</button>
+    </nav>
+
+    <section id="steam" class="panel active">
+      <p class="muted">更新時間：2026-03-04（依 Steam 商店新發售列表抓取）</p>
+      <div class="grid">
+        <article class="card">
+          <h3>Gaia Maker</h3>
+          <div class="meta">模擬 / 免費遊玩｜2026 年 3 月 4 日</div>
+          <p>以真實物理與地質為基礎的行星改造模擬，從荒蕪星球一步步塑造成可居住世界。</p>
+          <a href="https://store.steampowered.com/app/3662040/" target="_blank" rel="noopener">前往 Steam</a>
+        </article>
+        <article class="card">
+          <h3>Waddle Paddle</h3>
+          <div class="meta">冒險 / 休閒 / 獨立｜2026 年 3 月 4 日</div>
+          <p>操控可愛企鵝划獨木舟闖關，能單人也能雙人合作，節奏快、失誤懲罰高。</p>
+          <a href="https://store.steampowered.com/app/3936250/" target="_blank" rel="noopener">前往 Steam</a>
+        </article>
+        <article class="card">
+          <h3>NeNeKoNeKo</h3>
+          <div class="meta">休閒 / 獨立｜2026 年 3 月 4 日</div>
+          <p>以「盒子 + 貓咪」為核心的益智遊戲，要在有限空間中讓熟睡貓咪完美入格。</p>
+          <a href="https://store.steampowered.com/app/4390700/" target="_blank" rel="noopener">前往 Steam</a>
+        </article>
+        <article class="card">
+          <h3>Fruits Vs Veggies</h3>
+          <div class="meta">動作 / 獨立｜2026 年 3 月 4 日</div>
+          <p>多人派對平台遊戲，用道具和小遊戲對戰，也包含探索式單人內容。</p>
+          <a href="https://store.steampowered.com/app/2450140/" target="_blank" rel="noopener">前往 Steam</a>
+        </article>
+        <article class="card">
+          <h3>The Bazaar - Karnok</h3>
+          <div class="meta">策略｜2026 年 3 月 4 日</div>
+          <p>《The Bazaar》DLC，新增英雄 Karnok 與 120+ 物品、技能與事件。</p>
+          <a href="https://store.steampowered.com/app/4418930/" target="_blank" rel="noopener">前往 Steam</a>
+        </article>
+        <article class="card">
+          <h3>Lost Files: 1978</h3>
+          <div class="meta">動作 / 冒險 / 休閒｜2026 年 3 月 4 日</div>
+          <p>生存恐怖題材，玩家進入神祕宅邸尋父，聲音辨位是生存關鍵。</p>
+          <a href="https://store.steampowered.com/app/4025960/" target="_blank" rel="noopener">前往 Steam</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="future-1" class="panel">
+      <div class="placeholder">這裡先預留給你下一個主題（例如：電影片單、餐廳口袋名單、工具清單）。</div>
+    </section>
+
+    <section id="future-2" class="panel">
+      <div class="placeholder">第三個 Tab 預留中。</div>
+    </section>
+  </main>
+
+  <script>
+    const buttons = document.querySelectorAll('.tab-btn');
+    const panels = document.querySelectorAll('.panel');
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        buttons.forEach(b => b.classList.remove('active'));
+        panels.forEach(p => p.classList.remove('active'));
+        btn.classList.add('active');
+        document.getElementById(btn.dataset.tab).classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
